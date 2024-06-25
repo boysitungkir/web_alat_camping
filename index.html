@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trail Blazer</title>
+
+    <!-- Link Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- gogle Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link Slider by UNPKG -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Syle CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="icon" type="image/png" href="image/logo.png" />
+  </head>
+
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar-container">
+      <a href="#" class="navbar-logo">
+        <img src="image/logo.png" alt="TrailBlazer" />
+      </a>
+      <div class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button
+            type="button"
+            class="btn"
+            id="loginButton"
+            onclick="window.location.href='login.html';"
+          >
+            Login
+          </button>
+        </li>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+  </body>
+
+  <section class="landing-page" id="home">
+    <div class="landing-content">
+      <h1>TRAIL<span>BLAZER</span></h1>
+      <h4>
+        Welcome to our Trail Blazer Store! <br />
+        We are proud to provide high-quality equipment for true adventurers.
+        <br />
+        Don't miss the opportunity to prepare for your adventure with the best
+        equipment. <br />
+        Let's climb the mountain with the beauty of nature!
+      </h4>
+      <form class="search-form">
+        <input type="text" placeholder="Search item..." />
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="home">
+    <div class="swiper mySwiper home-slider">
+      <div class="swiper-wrapper wrapper">
+        <div class="swiper-slide slide">
+          <div class="content">
+            <span>Our Special Item</span>
+            <h2>MH100 Camping Tent</h2>
+            <p>
+              Enjoy the beauty of nature while resting in this eco-friendly
+              tent.
+            </p>
+            <a href="order.html" class="button">Order Now</a>
+          </div>
+          <div class="image">
+            <img src="image/image-1.png" alt="#" />
+          </div>
+        </div>
+
+        <div class="swiper-slide slide">
+          <div class="content">
+            <span>Our Special Item</span>
+            <h2>NH100 Ice Compact Mountain Bag</h2>
+            <p>
+              You can have fun while hiking and keep your food steady cold! Bag
+              volume 20 liters
+            </p>
+            <a href="order.html" class="button">Order Now</a>
+          </div>
+          <div class="image">
+            <img src="image/image-2.png" alt="" />
+          </div>
+        </div>
+
+        <div class="swiper-slide slide">
+          <div class="content">
+            <span>Our Special Item</span>
+            <h2>MH100 MID hiking boots</h2>
+            <p>
+              Lightweight with good grip and support for children can travel
+              anywhere
+            </p>
+            <a href="order.html" class="button">Order Now</a>
+          </div>
+          <div class="image">
+            <img src="image/image-3.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <!-- Section baru -->
+
+  <section id="tranding">
+    <div class="container">
+      <h3 class="text-center section-subheading">- popular Delivery -</h3>
+      <h1 class="text-center section-heading">trending equipment</h1>
+    </div>
+    <div class="container">
+      <div class="swiper tranding-slider">
+        <div class="swiper-wrapper">
+          <!-- Slide-start -->
+          <div class="swiper-slide tranding-slide">
+            <div class="tranding-slide-img">
+              <img src="image/image-4.jpg" alt="Tranding" />
+            </div>
+            <div class="tranding-slide-content">
+              <h1 class="item-price">$20</h1>
+              <div class="tranding-slide-content-bottom">
+                <h2 class="item-name">Cannon Camera</h2>
+                <h3 class="item-rating">
+                  <span>4.5</span>
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="swiper-slide tranding-slide">
+            <div class="tranding-slide-img">
+              <img src="image/image-5.jpg" alt="Tranding" />
+            </div>
+            <div class="tranding-slide-content">
+              <h1 class="item-price">$20</h1>
+              <div class="tranding-slide-content-bottom">
+                <h2 class="item-name">mountain flask</h2>
+                <h3 class="item-rating">
+                  <span>4.5</span>
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="swiper-slide tranding-slide">
+            <div class="tranding-slide-img">
+              <img src="image/image-6.jpg" alt="Tranding" />
+            </div>
+            <div class="tranding-slide-content">
+              <h1 class="item-price">$40</h1>
+              <div class="tranding-slide-content-bottom">
+                <h2 class="item-name">Tumbler</h2>
+                <h3 class="item-rating">
+                  <span>4.5</span>
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="swiper-slide tranding-slide">
+            <div class="tranding-slide-img">
+              <img src="image/image-7.jpg" alt="Tranding" />
+            </div>
+            <div class="tranding-slide-content">
+              <h1 class="item-price">$15</h1>
+              <div class="tranding-slide-content-bottom">
+                <h2 class="item-name">Chair Camp</h2>
+                <h3 class="item-rating">
+                  <span>4.5</span>
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="swiper-slide tranding-slide">
+            <div class="tranding-slide-img">
+              <img src="image/image-8.jpg" alt="Tranding" />
+            </div>
+            <div class="tranding-slide-content">
+              <h1 class="item-price">$15</h1>
+              <div class="tranding-slide-content-bottom">
+                <h2 class="item-name">Lamp</h2>
+                <h3 class="item-rating">
+                  <span>4.5</span>
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="swiper-slide tranding-slide">
+            <div class="tranding-slide-img">
+              <img src="image/image-9.jpg" alt="Tranding" />
+            </div>
+            <div class="tranding-slide-content">
+              <h1 class="item-price">$20</h1>
+              <div class="tranding-slide-content-bottom">
+                <h2 class="item-name">Compass</h2>
+                <h3 class="item-rating">
+                  <span>4.5</span>
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="swiper-slide tranding-slide">
+            <div class="tranding-slide-img">
+              <img src="image/image-10.jpg" alt="Tranding" />
+            </div>
+            <div class="tranding-slide-content">
+              <h1 class="item-price">$8</h1>
+              <div class="tranding-slide-content-bottom">
+                <h2 class="item-name">Straw Cake</h2>
+                <h3 class="item-rating">
+                  <span>4.5</span>
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <!-- Slide-end -->
+        </div>
+
+        <div class="tranding-slider-control">
+          <div class="swiper-button-prev slider-arrow">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+          </div>
+          <div class="swiper-button-next slider-arrow">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="last-section">
+    <div class="left-side">
+      <h1>Fast Delivery</h1>
+      <p>
+        We collaborate with the fastest and most reliable delivery. <br />
+        We maintain our quality until it reaches your destination, <br />
+        so that we can continue to receive your trust
+      </p>
+
+      <a href="/delivery.html">Learn more<i data-feather="arrow-right"></i></a>
+    </div>
+    <div class="right-side">
+      <img src="image/image-12.png" alt="Interface preview" />
+    </div>
+  </section>
+
+  <section class="last-section-2">
+    <div class="second-left-side">
+      <img src="image/image-13.png" alt="Interface preview" />
+    </div>
+    <div class="second-right-side">
+      <h1>Quality Maintained</h1>
+      <p>
+        We always check whether our goods are still fit for sale or not. <br />
+        We will always check every item <br />
+        we produce to ensure your comfort
+      </p>
+      <a href="#"><i data-feather="arrow-left"></i>Learn More</a>
+    </div>
+  </section>
+
+  <section class="footer">
+    <div class="footer-column">
+      <div class="footer-name">Trail<span>Blazer</span></div>
+      <div class="footer-desk">Camping quipment platform</div>
+    </div>
+    <div class="footer-column">
+      <div class="footer-title">Company</div>
+      <a href="#" class="footer-link">Product</a>
+      <a href="#" class="footer-link">Blog</a>
+      <a href="#" class="footer-link">Support</a>
+    </div>
+    <div class="footer-column">
+      <div class="footer-title">Features</div>
+      <a href="#" class="footer-link">Screen Sharing</a>
+      <a href="#" class="footer-link">File Sharing</a>
+      <a href="#" class="footer-link">User Management</a>
+    </div>
+    <div class="footer-column">
+      <div class="footer-title">Contact Us</div>
+      <div class="footer-link">blazetrail@info.com</div>
+      <div class="footer-link">+822 7689 9966</div>
+      <div class="footer-link">Medan, Indonesia</div>
+    </div>
+  </section>
+
+  <section class="web-bottom">
+    <div class="footer-bottom">
+      <div class="footer-copy">© Copyright Team TrailBlazer</div>
+    </div>
+  </section>
+  <!-- Script Swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Feather Icons -->
+  <script>
+    feather.replace();
+  </script>
+  <!-- Navbar end -->
+
+  <!-- Script for module -->
+
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <script src="js/script.js"></script>
+</html>

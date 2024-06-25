@@ -1,0 +1,364 @@
+:root {
+  --bg: #b7b7b7ec;
+  --primary: #fff;
+  --green: #009c41;
+  --desk: #0c1844;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 5.5rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #192a56;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.navbar-container .navbar a:hover {
+  color: #0a8043;
+}
+
+.navbar-container .navbar {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin-left: auto;
+  margin-right: 20px;
+  font-style: italic;
+  color: var(--bg);
+  margin-bottom: 0;
+}
+
+.navbar-logo img {
+  width: 60px;
+  height: auto;
+  border-radius: 50%;
+  margin-left: 30px;
+}
+
+.navbar-container .navbar-extra a {
+  margin-top: -5px;
+}
+
+.navbar-container .navbar a {
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.navbar-container .navbar a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #0a8043;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar-container .navbar a:hover::after {
+  transform: scaleX(1);
+}
+
+.navbar-container .navbar-extra {
+  display: flex;
+}
+
+.navbar button {
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #4169e1;
+  font-size: 15px;
+  font-family: "Poppins";
+}
+.item {
+  width: 100%;
+  padding: 70px 0;
+}
+
+.item h1 {
+  font-size: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.item h1 span {
+  color: var(--green);
+  margin-left: 15px;
+  font-family: mv boli;
+}
+
+.item h1 span::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: var(--green);
+  display: block;
+  position: relative;
+  bottom: 15px;
+}
+
+.item .item_box {
+  width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.item .item_box .item_card {
+  width: 280px;
+  height: 480px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.item .item_box .item_card .item_image {
+  width: 270px;
+  height: 245px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.item .item_box .item_card .item_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.3s;
+}
+
+.item .item_box .item_card .item_image:hover img {
+  transform: scale(1.1);
+}
+
+.item .item_box .item_card .small_card {
+  width: 45px;
+  height: 45px;
+  float: right;
+  position: relative;
+  top: -240px;
+  right: -8px;
+  opacity: 0;
+  border-radius: 7px;
+  transition: 0.3s;
+}
+
+.item .item_box .item_card:hover .small_card {
+  position: relative;
+  top: -240px;
+  right: 20px;
+  opacity: 1;
+}
+
+.item .item_box .item_card .small_card i {
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 50px;
+  color: #000;
+  cursor: pointer;
+  text-shadow: 0 0 6px #000;
+  transition: 0.2s;
+}
+
+.item .item_box .item_card .small_card i:hover {
+  color: red;
+}
+
+.item .item_box .item_card .item_info h2 {
+  width: 60%;
+  text-align: center;
+  margin: 10px auto 10px auto;
+  font-size: 25px;
+  color: var(--green);
+}
+
+.item .item_box .item_card .item_info p {
+  text-align: center;
+  margin-top: 8px;
+  line-height: 21px;
+  color: var(--desk);
+}
+
+.item .item_box .item_card .item_info h3 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.item .item_box .item_card .item_info .item_icon {
+  color: #fac031;
+  text-align: center;
+  margin: 10px 0 10px 0;
+}
+
+.item .item_box .item_card .item_info .item_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  background: var(--desk);
+  padding: 8px 10px;
+  margin: 0 80px;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.item .item_box .item_card .item_info .item_btn:hover {
+  background: var(--green);
+  letter-spacing: 0.1rem;
+}
+
+.footer {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.footer-column {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-name {
+  color: var(--black);
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: mv boli;
+}
+
+.footer-name span {
+  color: var(--green);
+  font-family: mv boli;
+}
+
+.footer-title {
+  color: var(--black);
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-title span {
+  color: var(--green);
+}
+
+.footer-link {
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.footer-link {
+  color: black;
+  transition: transform 0.3s;
+}
+
+.footer-link:hover {
+  color: blue;
+  transform: translateX(5px);
+}
+
+.web-bottom {
+  background-color: #3356af;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 999;
+}
+
+.footer-copy {
+  color: var(--primary);
+  font-size: 12px;
+  text-align: center;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Gaya dasar untuk semua perangkat */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+    margin: 10px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* Lebarkan area konten utama */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  .nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+}

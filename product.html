@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Link Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- gogle Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link Slider by UNPKG -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Syle CSS -->
+    <link rel="stylesheet" href="css/product.css" />
+
+    <link rel="icon" type="image/png" href="image/logo.png" />
+  </head>
+  </head>
+
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar-container">
+      <a href="#" class="navbar-logo">
+        <img src="image/logo.png" alt="TrailBlazer" />
+      </a>
+      <div class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#product">Product</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button
+            type="button"
+            class="btn"
+            id="loginButton"
+            onclick="window.location.href='login.html';"
+          >
+            Login
+          </button>
+        </li>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+  </body>
+
+  <!--item-->
+
+  <div class="item" id="item">
+    <h1>Our<span>item</span></h1>
+
+    <div class="item_box">
+      <div class="item_card">
+        <div class="item_image">
+          <img src="image/image-14.jpg" />
+        </div>
+
+        <div class="small_card">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+
+        <div class="item_info">
+          <h2>ZP327-Green</h2>
+          <p>
+            You and your family can enjoy camping activities without worrying about rain or hot sun.
+          </p>
+          <h3>$10.19</h3>
+          <div class="item_icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <a href="order.html" class="item_btn">Order Now</a>
+        </div>
+      </div>
+
+      <div class="item_card">
+        <div class="item_image">
+          <img src="image/image-15.jpg" />
+        </div>
+
+        <div class="small_card">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+
+        <div class="item_info">
+          <h2>Asphalt Grey</h2>
+          <p>
+            Featuring large doors for easy access <br>
+             (and amazing views of the outdoors)
+          </p>
+          <h3>$260.72</h3>
+          <div class="item_icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <a href="order.html" class="item_btn">Order Now</a>
+        </div>
+      </div>
+
+      <div class="item_card">
+        <div class="item_image">
+          <img src="image/image-16.jpg" />
+        </div>
+
+        <div class="small_card">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+
+        <div class="item_info">
+          <h2>Lighter</h2>
+          <p>
+            Make a small fire and have fun <br> and make sure keep yourself warm
+          </p>
+          <h3>$20.00</h3>
+          <div class="item_icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <a href="order.html" class="item_btn">Order Now</a>
+        </div>
+      </div>
+
+      <div class="item_card">
+        <div class="item_image">
+          <img src="image/image-17.jpg" />
+        </div>
+
+        <div class="small_card">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+
+        <div class="item_info">
+          <h2>Stove</h2>
+          <p>
+            Cook some food for you and family <br> make some memorable moment
+          </p>
+          <h3>$30.00</h3>
+          <div class="item_icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <a href="order.html" class="item_btn">Order Now</a>
+        </div>
+      </div>
+
+      <div class="item_card">
+        <div class="item_image">
+          <img src="image/image-18.jpg" />
+        </div>
+
+        <div class="small_card">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+
+        <div class="item_info">
+          <h2>Sleeping bag</h2>
+          <p>
+            keep yourself safe at night <br> with a sleeping bag
+          </p>
+          <h3>$35.00</h3>
+          <div class="item_icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <a href="order.html" class="item_btn">Order Now</a>
+        </div>
+      </div>
+
+      <div class="item_card">
+        <div class="item_image">
+          <img src="image/image-19.jpg" />
+        </div>
+
+        <div class="small_card">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+
+        <div class="item_info">
+          <h2>Lamp</h2>
+          <p>
+            Make a light if you do <br> something on your camping
+          </p>
+          <h3>$40.00</h3>
+          <div class="item_icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <a href="order.html" class="item_btn">Order Now</a>
+        </div>
+      </div>
+
+      <div class="item_card">
+        <div class="item_image">
+          <img src="image/image-20.jpg" />
+        </div>
+
+        <div class="small_card">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+
+        <div class="item_info">
+          <h2>Knife</h2>
+          <p>
+            You can do a lot of things <br> using a multifunction knife
+          </p>
+          <h3>$50.00</h3>
+          <div class="item_icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <a href="order.html" class="item_btn">Order Now</a>
+        </div>
+      </div>
+
+      <div class="item_card">
+        <div class="item_image">
+          <img src="image/image-21.jpg" />
+        </div>
+
+        <div class="small_card">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+
+        <div class="item_info">
+          <h2>Camera</h2>
+          <p>
+            Take a ficture <br> make some memories on ypur holyday
+          </p>
+          <h3>$400.00</h3>
+          <div class="item_icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <a href="order.html" class="item_btn">Order Now</a>
+        </div>
+      </div>
+
+      <div class="item_card">
+        <div class="item_image">
+          <img src="image/image-22.jpg" />
+        </div>
+
+        <div class="small_card">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+
+        <div class="item_info">
+          <h2>Chair</h2>
+          <p>
+            rest with a comfortable chair <br> on your vacation
+          </p>
+          <h3>$90.00</h3>
+          <div class="item_icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <a href="order.html" class="item_btn">Order Now</a>
+        </div>
+      </div>
+
+      <div class="item_card">
+        <div class="item_image">
+          <img src="image/image-23.jpg" />
+        </div>
+
+        <div class="small_card">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+
+        <div class="item_info">
+          <h2>Mattress</h2>
+          <p>
+            You can sit back and relax or exercise <br> on a comfortable mattress
+          </p>
+          <h3>$20.00</h3>
+          <div class="item_icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <a href="order.html" class="item_btn">Order Now</a>
+        </div>
+      </div>
+
+      <div class="item_card">
+        <div class="item_image">
+          <img src="image/image-24.jpg" />
+        </div>
+
+        <div class="small_card">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+
+        <div class="item_info">
+          <h2>Food</h2>
+          <p>
+            Take care of your health <br> while camping with healthy and nutritious food
+          </p>
+          <h3>$20.00</h3>
+          <div class="item_icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <a href="order.html" class="item_btn">Order Now</a>
+        </div>
+      </div>
+
+      <div class="item_card">
+        <div class="item_image">
+          <img src="image/image-25.jpg" />
+        </div>
+
+        <div class="small_card">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+
+        <div class="item_info">
+          <h2>Equipment</h2>
+          <p>
+            To fill your free time, <br> you can go to the river to catch some fish
+          </p>
+          <h3>$20.00</h3>
+          <div class="item_icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <a href="order.html" class="item_btn">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="footer">
+    <div class="footer-column">
+      <div class="footer-name">Trail<span>Blazer</span></div>
+      <div class="footer-desk">Camping quipment platform</div>
+    </div>
+    <div class="footer-column">
+      <div class="footer-title">Company</div>
+      <a href="#" class="footer-link">Product</a>
+      <a href="#" class="footer-link">Blog</a>
+      <a href="#" class="footer-link">Support</a>
+    </div>
+    <div class="footer-column">
+      <div class="footer-title">Features</div>
+      <a href="#" class="footer-link">Screen Sharing</a>
+      <a href="#" class="footer-link">File Sharing</a>
+      <a href="#" class="footer-link">User Management</a>
+    </div>
+    <div class="footer-column">
+      <div class="footer-title">Contact Us</div>
+      <div class="footer-link">blazetrail@info.com</div>
+      <div class="footer-link">+822 7689 9966</div>
+      <div class="footer-link">Medan, Indonesia</div>
+    </div>
+  </section>
+
+  <section class="web-bottom">
+    <div class="footer-bottom">
+      <div class="footer-copy">© Copyright Team TrailBlazer</div>
+    </div>
+  </section>
+  <!-- Script Swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Feather Icons -->
+  <script>
+    feather.replace();
+  </script>
+
+  <!-- Script for module -->
+
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <script src="js/script.js"></script>
+
+</html>

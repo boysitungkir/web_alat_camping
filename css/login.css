@@ -1,0 +1,67 @@
+:root {
+  --green: #009c41;
+  --low-green: #014f0e;
+  --black: #192a56;
+}
+html {
+  background: url(bg.jpg);
+  background-size: cover;
+}
+
+.login-form {
+  background: url(bg.jpg) center center no-repeat;
+  background-size: cover;
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 200px;
+}
+
+.login-action {
+  text-align: left;
+  font-style: italic;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: var(--black);
+  text-align: center;
+}
+
+span {
+  color: var(--green);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+  width: 90%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  padding: 10px 10px;
+  background-color: var(--black);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 200px;
+  margin-left: 100px;
+}
+
+input[type="submit"]:hover {
+  background: var(--green);
+  letter-spacing: 0.1rem;
+}
+
+input[type="submit"]:hover::after {
+  transform: scaleX(1);
+}

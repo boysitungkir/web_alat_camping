@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Syle CSS -->
+    <link rel="stylesheet" href="css/order.css" />
+
+    <link rel="icon" type="image/png" href="image/logo.png" />
+  </head>
+  <body>
+        <!-- navbar start -->
+        <nav class="navbar-container">
+            <a href="#" class="navbar-logo">
+              <img src="image/logo.png" alt="TrailBlazer" />
+            </a>
+            <div class="navbar">
+              <li><a href="#home">Home</a></li>
+              <li><a href="product.html">Product</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li>
+                <button
+                  type="button"
+                  class="btn"
+                  id="loginButton"
+                  onclick="window.location.href='login.html';"
+                >
+                  Login
+                </button>
+              </li>
+            </div>
+      
+            <div class="navbar-extra">
+              <a href="#" id="menu"><i data-feather="menu"></i></a>
+            </div>
+          </nav>
+        </body>
+
+<!--Order-->
+
+<div class="order" id="Order">
+    <h1><span>Order</span>Now</h1>
+
+    <div class="order_main">
+
+        <div class="order_image">
+            <img src="image/order_image.png">
+        </div>
+
+        <form action="#">
+
+            <div class="input">
+                <p>Name</p>
+                <input type="text" placeholder="you name">
+            </div>
+
+            <div class="input">
+                <p>Email</p>
+                <input type="email" placeholder="you email">
+            </div>
+
+            <div class="input">
+                <p>Number</p>
+                <input placeholder="you number">
+            </div>
+
+            <div class="input">
+                <p>How Much</p>
+                <input type="number" placeholder="how many order">
+            </div>
+
+            <div class="input">
+                <p>You Order</p>
+                <input placeholder="food name">
+            </div>
+
+            <div class="input">
+                <p>Address</p>
+                <input placeholder="you Address">
+            </div>
+
+            <a href="#" class="order_btn">Order Now</a>
+
+        </form>
+
+    </div>
+
+</div>
+
+<section class="footer">
+    <div class="footer-column">
+      <div class="footer-name">Trail<span>Blazer</span></div>
+      <div class="footer-desk">Camping quipment platform</div>
+    </div>
+    <div class="footer-column">
+      <div class="footer-title">Company</div>
+      <a href="#" class="footer-link">Product</a>
+      <a href="#" class="footer-link">Blog</a>
+      <a href="#" class="footer-link">Support</a>
+    </div>
+    <div class="footer-column">
+      <div class="footer-title">Features</div>
+      <a href="#" class="footer-link">Screen Sharing</a>
+      <a href="#" class="footer-link">File Sharing</a>
+      <a href="#" class="footer-link">User Management</a>
+    </div>
+    <div class="footer-column">
+      <div class="footer-title">Contact Us</div>
+      <div class="footer-link">blazetrail@info.com</div>
+      <div class="footer-link">+822 7689 9966</div>
+      <div class="footer-link">Medan, Indonesia</div>
+    </div>
+  </section>
+
+  <section class="web-bottom">
+    <div class="footer-bottom">
+      <div class="footer-copy">© Copyright Team TrailBlazer</div>
+    </div>
+  </section>
+
+  <script>
+    feather.replace();
+  </script>
+
+  </body>
+</html>
